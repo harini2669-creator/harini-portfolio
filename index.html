@@ -1,63 +1,277 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Harini J Portfolio</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Harini J | Cloud Security Portfolio</title>
+
 <style>
-body{
-background:#0a0a0a;
-color:white;
-font-family:Arial,sans-serif;
-margin:0;
-padding:0;
-text-align:center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-.hero{
-padding:100px 20px;
+
+html { scroll-behavior: smooth; }
+
+body {
+  background: #0b1120;
+  color: #e5e7eb;
+  font-family: Arial, sans-serif;
+  line-height: 1.7;
 }
-h1{
-font-size:60px;
-margin:0;
+
+nav {
+  padding: 18px 8%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #111827;
+  position: sticky;
+  top: 0;
+  z-index: 10;
 }
-h2{
-color:#d97706;
+
+nav h2 { color: #38bdf8; }
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 18px;
+  font-size: 14px;
 }
-.card{
-background:#111;
-margin:20px auto;
-padding:20px;
-width:80%;
-border-radius:15px;
+
+nav a:hover { color: #38bdf8; }
+
+.hero {
+  text-align: center;
+  padding: 100px 20px 85px;
+  background: linear-gradient(135deg, #111827, #172554);
+}
+
+.hero h1 {
+  font-size: 48px;
+  color: white;
+}
+
+.hero h3 {
+  color: #38bdf8;
+  margin: 12px 0;
+}
+
+.hero p {
+  color: #cbd5e1;
+  margin: 8px;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 22px;
+  padding: 11px 24px;
+  background: #0284c7;
+  color: white;
+  text-decoration: none;
+  border-radius: 7px;
+}
+
+section {
+  max-width: 1000px;
+  margin: auto;
+  padding: 55px 25px;
+}
+
+.section-title {
+  color: #38bdf8;
+  margin-bottom: 22px;
+  font-size: 27px;
+}
+
+.card {
+  background: #172033;
+  padding: 25px;
+  margin-bottom: 18px;
+  border-radius: 12px;
+  border: 1px solid #26364d;
+}
+
+.card h3 {
+  color: #7dd3fc;
+  margin-bottom: 10px;
+}
+
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.skill {
+  background: #172f4b;
+  color: #7dd3fc;
+  padding: 9px 15px;
+  border-radius: 20px;
+  font-size: 14px;
+}
+
+a { color: #38bdf8; }
+
+footer {
+  text-align: center;
+  padding: 25px;
+  background: #111827;
+  color: #94a3b8;
+}
+
+@media(max-width: 600px) {
+  nav {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  nav a { margin: 5px; }
+
+  .hero h1 { font-size: 35px; }
 }
 </style>
 </head>
+
 <body>
 
-<div class="hero">
-<h1>Harini J</h1>
-<h2>B.Tech Information Technology</h2>
-<p>CGPA: 8.4</p>
-<p>Aspiring AI & Data Science Professional</p>
-</div>
+<nav>
+  <h2>Harini J</h2>
+  <div>
+    <a href="#about">About</a>
+    <a href="#education">Education</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
 
-<div class="card">
-<h2>About Me</h2>
-<p>Final-year B.Tech IT student at Vel Tech University preparing for higher studies in Germany.</p>
-</div>
+<header class="hero">
+  <h1>Hi, I'm Harini J</h1>
+  <h3>Cloud & Network Security Enthusiast</h3>
+  <p>B.Tech Information Technology Graduate | CGPA: 8.45</p>
+  <p>MSc Cloud and Network Security Offer Holder</p>
+  <a class="btn" href="#projects">Explore My Projects</a>
+</header>
 
-<div class="card">
-<h2>Major Project</h2>
-<p>Deep Learning Based Model for Diabetic Retinopathy Detection using EfficientNet-B3.</p>
-</div>
+<section id="about">
+  <h2 class="section-title">About Me</h2>
+  <div class="card">
+    <p>
+      I am a B.Tech Information Technology graduate from
+      Vel Tech Rangarajan Dr. Sagunthala R&D Institute
+      of Science and Technology with a CGPA of 8.45.
+    </p>
+    <br>
+    <p>
+      I hold an offer to pursue MSc Cloud and Network
+      Security at the University of Greater Manchester.
+      I am passionate about cloud computing, networking,
+      cybersecurity and technology.
+    </p>
+    <br>
+    <p>
+      My goal is to develop practical technical skills
+      and build a career in Cloud Security, Cloud
+      Engineering and DevSecOps.
+    </p>
+  </div>
+</section>
 
-<div class="card">
-<h2>Skills</h2>
-<p>Python • Machine Learning • Deep Learning • Data Analytics • SQL</p>
-</div>
+<section id="education">
+  <h2 class="section-title">Education</h2>
 
-<div class="card">
-<h2>Contact</h2>
-<p>Email: your-email@example.com</p>
-</div>
+  <div class="card">
+    <h3>B.Tech Information Technology</h3>
+    <p>Vel Tech Rangarajan Dr. Sagunthala R&D Institute
+    of Science and Technology</p>
+    <p>Graduation: 2026 | CGPA: 8.45</p>
+  </div>
+
+  <div class="card">
+    <h3>MSc Cloud and Network Security</h3>
+    <p>University of Greater Manchester, United Kingdom</p>
+    <p>Offer Holder | Intended intake: January 2027</p>
+  </div>
+</section>
+
+<section id="skills">
+  <h2 class="section-title">Technical Skills</h2>
+  <div class="card">
+    <div class="skills">
+      <span class="skill">Python</span>
+      <span class="skill">Computer Networking</span>
+      <span class="skill">TCP/IP</span>
+      <span class="skill">DNS</span>
+      <span class="skill">DHCP</span>
+      <span class="skill">Linux Fundamentals</span>
+      <span class="skill">AWS Fundamentals</span>
+      <span class="skill">Cybersecurity Fundamentals</span>
+      <span class="skill">TensorFlow</span>
+      <span class="skill">Keras</span>
+      <span class="skill">Machine Learning</span>
+      <span class="skill">Deep Learning</span>
+    </div>
+  </div>
+</section>
+
+<section id="projects">
+  <h2 class="section-title">Academic Projects</h2>
+
+  <div class="card">
+    <h3>Diabetic Retinopathy Detection</h3>
+    <p>
+      Developed a deep learning-based diabetic
+      retinopathy detection project using the
+      EfficientNet-B3 architecture and APTOS 2019 dataset.
+    </p>
+    <br>
+    <p>
+      <strong>Technologies:</strong>
+      Python, TensorFlow, Keras, NumPy, Pandas,
+      EfficientNet-B3.
+    </p>
+    <br>
+    <a href="https://github.com/harini2669-creator/diabetic-retinopathydetection"
+       target="_blank" rel="noopener noreferrer">
+       View Project on GitHub →
+    </a>
+  </div>
+</section>
+
+<section>
+  <h2 class="section-title">Career Interests</h2>
+  <div class="card">
+    <div class="skills">
+      <span class="skill">Cloud Security</span>
+      <span class="skill">IT Support</span>
+      <span class="skill">Cloud Engineering</span>
+      <span class="skill">Network Security</span>
+      <span class="skill">DevSecOps</span>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <h2 class="section-title">Connect With Me</h2>
+  <div class="card">
+    <p>Thank you for visiting my portfolio!</p>
+    <p>
+      GitHub:
+      <a href="https://github.com/harini2669-creator"
+         target="_blank" rel="noopener noreferrer">
+        View My GitHub Profile
+      </a>
+    </p>
+    <p>LinkedIn: Add your LinkedIn profile link here.</p>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 Harini J | Personal Portfolio</p>
+</footer>
 
 </body>
 </html>
